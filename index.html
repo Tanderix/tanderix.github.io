@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>MCU Checklist</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript">
+            function saveCheck(){
+                var ironman = document.getElementById("ironman").checked;
+                var hulk = document.getElementById("hulk").checked;
+                var ironman2 = document.getElementById("ironman2").checked;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>MCU Checklist</h1>
+        <h3>Check the movies you saw and find the ones you didn't.</h3>
+    </body>
+    <div id="wrapper">
+        <div id="inner">
+                <img src="images/ironman.jpg" width="100px" height="150px">
+                <p>Iron Man</p>
+                <input type="checkbox" id="ironman">
+        </div>        
+        <div id="inner">
+                <img src="images/hulk.jpg" width="100px" height="150px">
+                <p>The Incredible Hulk</p>
+                <input type="checkbox" id="hulk">
+        </div>
+        <div id="inner">
+                <img src="images/ironman2.jpg" width="100px" height="150px">
+                <p>Iron Man 2</p>
+                <input type="checkbox" id="ironman2">
+        </div>
+
+    </div>
+    <br>
+    <center>
+        <button onclick="saveCheck()">Save</button>
+    </center>
+</html>
